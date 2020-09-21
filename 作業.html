@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: 微軟正黑體;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+      /* background-size: 200%; */
+      background: linear-gradient(45deg, white, rgba(0, 0, 0, 0.1));
+      animation: bgcolor 5s linear infinite alternate;
+    }
+
+    @keyframes bgcolor {
+      0% {
+        background: linear-gradient(45deg, white, rgba(0, 0, 0, 0.1));
+      }
+
+      50% {
+        background: linear-gradient(175deg, white, rgba(0, 0, 0, 0.1));
+      }
+
+      100% {
+        background: linear-gradient(45deg, white, rgba(0, 0, 0, 0.1));
+      }
+    }
+
+    p {
+      font-size: 8px;
+      color: grey;
+      padding: 120px 10px 0px 10px;
+    }
+
+    img {
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      margin-left: -25px;
+      top: 50px;
+    }
+
+    .book {
+      height: 250px;
+      width: 600px;
+      /* background: red; */
+      /* border: 1px solid black; */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -300px;
+      margin-top: -125px;
+      box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.1);
+      -webkit-box-reflect: below 0px linear-gradient(transparent 60%, rgba(0, 0, 0, 0.5) 100%);
+    }
+
+    .page1,
+    .page2,
+    .page3,
+    .page4 {
+      width: 150px;
+      height: 250px;
+      position: absolute;
+      transition: .7s;
+    }
+
+    .page1 {
+      background-image: linear-gradient(90deg, white 90%, rgba(0, 0, 0, 0.1) 100%);
+    }
+
+    .page2 {
+      left: 150px;
+      background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 90%, rgba(0, 0, 0, 0.1) 100%);
+    }
+
+    .page3 {
+      left: 300px;
+      background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 90%, rgba(0, 0, 0, 0.1) 100%);
+    }
+
+    .page4 {
+      left: 450px;
+      background-image: linear-gradient(-90deg, white 90%, rgba(0, 0, 0, 0.1) 100%);
+    }
+
+    .page1:hover,
+    .page2:hover,
+    .page3:hover,
+    .page4:hover {
+      transform: translateY(-30px);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="book">
+    <div class="page1">
+      <img src="https://picsum.photos/50/50/?random=1" />
+      <p>熱點先進教育此外計劃電力綠色回答發現體會，多媒體練習像素一半只能缺乏當年本文他對下一頁職位開心對話，那樣魅力江湖開發商連結。</p>
+    </div>
+    <div class="page2">
+      <img src="https://picsum.photos/50/50/?random=2" />
+      <p>熟悉指數，預覽上面民族經營補充直到微軟創業第三右鍵，照片詳細定義場所節省將其，不夠團隊速度年代差不多，進步作品點這裡之家無限一定情感出版社。</p>
+    </div>
+    <div class="page3">
+      <img src="https://picsum.photos/50/50/?random=3" />
+      <p>認為微微不足一顆地方全身金幣什麼事，增強一下子力道基金懷疑業主，地上自己人大把它博士司機新臺幣，同事一塊上來，其他核心另一個詳細。</p>
+    </div>
+    <div class="page4">
+      <img src="https://picsum.photos/50/50/?random=4" />
+      <p>便利商店永遠刺激，一顆進度獲得發現是怎麼立場家電，委託一口適用大戰內容簡介請您，滑鼠春節現實醫院不詳兩種沒人法國浪費社區。</p>
+    </div>
+  </div>
+</body>
+
+</html>
